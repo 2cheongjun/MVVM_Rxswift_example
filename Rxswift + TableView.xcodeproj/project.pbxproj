@@ -17,6 +17,8 @@
 		D00BE74329B4CA490095C184 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00BE74129B4CA490095C184 /* Product.swift */; };
 		D00BE75029B4D65F0095C184 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00BE74F29B4D65F0095C184 /* RootViewController.swift */; };
 		D00BE75229B4D7E80095C184 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00BE75129B4D7E80095C184 /* Coordinator.swift */; };
+		D00BE75529B4EA4B0095C184 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00BE75429B4EA4B0095C184 /* Article.swift */; };
+		D00BE75829B4EBA00095C184 /* ArticleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00BE75729B4EBA00095C184 /* ArticleService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		D00BE74129B4CA490095C184 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		D00BE74F29B4D65F0095C184 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		D00BE75129B4D7E80095C184 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		D00BE75429B4EA4B0095C184 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		D00BE75729B4EBA00095C184 /* ArticleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleService.swift; sourceTree = "<group>"; };
 		F9FAA1CC68BBF9A533118AF6 /* Pods-Rxswift + TableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rxswift + TableView.release.xcconfig"; path = "Target Support Files/Pods-Rxswift + TableView/Pods-Rxswift + TableView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +90,8 @@
 		D00BE72729B4C89A0095C184 /* Rxswift + TableView */ = {
 			isa = PBXGroup;
 			children = (
+				D00BE75329B4EA3A0095C184 /* Model */,
+				D00BE75629B4EB860095C184 /* Service */,
 				D00BE74E29B4D64B0095C184 /* Controllers */,
 				D00BE73F29B4CA490095C184 /* Models */,
 				D00BE72829B4C89A0095C184 /* AppDelegate.swift */,
@@ -114,6 +120,22 @@
 				D00BE74F29B4D65F0095C184 /* RootViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D00BE75329B4EA3A0095C184 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D00BE75429B4EA4B0095C184 /* Article.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D00BE75629B4EB860095C184 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D00BE75729B4EBA00095C184 /* ArticleService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +256,8 @@
 				D00BE72929B4C89A0095C184 /* AppDelegate.swift in Sources */,
 				D00BE75029B4D65F0095C184 /* RootViewController.swift in Sources */,
 				D00BE73329B4C89A0095C184 /* Rxswift___TableView.xcdatamodeld in Sources */,
+				D00BE75529B4EA4B0095C184 /* Article.swift in Sources */,
+				D00BE75829B4EBA00095C184 /* ArticleService.swift in Sources */,
 				D00BE72B29B4C89A0095C184 /* SceneDelegate.swift in Sources */,
 				D00BE74329B4CA490095C184 /* Product.swift in Sources */,
 				D00BE75229B4D7E80095C184 /* Coordinator.swift in Sources */,
