@@ -9,8 +9,29 @@ import Foundation
 import Alamofire
 import RxSwift
 
-//뉴스요청API
-class ArticleService {
+//프로토콜 생성, 뷰모델에 갖다씀
+protocol AriticleServiceProtocol{
+    func fetchNews() -> Observable<[Article]>
+}
+
+// 테스트 코드
+class stubArticleService: AriticleServiceProtocol {
+    func fetchNews() -> Observable<[Article]> {
+        
+        return Observable.create { (observer) -> Disposable in
+            
+            Article(author: "june", title: "title", urlToImage: "", description: "description", url: "123", publishedAt: "123213")
+            Article(author: "june", title: "title", urlToImage: "",description: "description", url: "123", publishedAt: "123213")
+            Article(author: "june", title: "title", urlToImage: "",description: "description", url: "123", publishedAt: "123213")
+            
+            return Disposables.create()
+        }
+    }
+}
+
+
+//뉴스요청API (프로토콜 적용)
+class ArticleService : AriticleServiceProtocol {
     
     //Rx적용
     // 아티클의 옵져버블로  반환
